@@ -8,21 +8,21 @@
         margin-top: 2rem;
     }
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: black;
     }
     .files {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        margin-top: 35px;
+        margin-top: 15px;
         .file {
             display: flex;
             align-items: center;
             padding: 25px;
             gap: 20px;
             .fileIcon {
-                font-size: 3rem;
+                font-size: 2rem;
                 color: blue;
             }
             .progress__upload {
@@ -35,11 +35,12 @@
                     flex-direction: row;
                     justify-content: space-between;
                     h3 {
+                        font-size: 16px;
                         letter-spacing: 0.05rem;
                         color: gray;
                     }
                     p {
-                        font-size: 18px;
+                        font-size: 13px;
                         padding: 0;
                         margin: 5px;
                         font-weight: 600;
