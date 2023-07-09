@@ -1,0 +1,34 @@
+.app {
+    width: 100%;
+    height: 100%;
+    .app__upload {
+        padding: 2rem;
+        .title {
+            color: #5fb89b;
+            font-size: 3rem;
+        }
+        p {
+            color: gray;
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+        .app__upload-wrapper {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            @media screen and (max-width: 1080px) {
+                flex-direction: column;
+            }
+            .browse__file {
+                width: 100%;
+                height: 100%;
+                flex: 1;
+            }
+            .uploaded__file {
+                width: 100%;
+                height: 100%;
+                flex: 1;
+            }
+        }
+    }
+}

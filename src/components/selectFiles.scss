@@ -1,0 +1,73 @@
+.form__selectFiles {
+    width: 100%;
+    height: 75vh;
+    text-align: center;
+    position: relative;
+    border-width: 3px;
+    border-radius: 1rem;
+    border-style: dashed;
+    border-color: #5fb89b;
+    @media screen and (max-width: 1080px) {
+        height: 50vh;
+    }
+    #input__selectFiles {
+        display: none;
+    }
+    label {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        color: #5fb89b;
+        .icon {
+            font-size: 5rem;
+            fill: lightgray;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 30px;
+        }
+        span {
+            margin: 20px 0;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &::before,
+            &::after {
+                content: '';
+                width: 5px;
+                height: 1px;
+                margin: 0 5px;
+                background-color: #5fb89b;
+            }
+        }
+        button {
+            background-color: #5fb89b;
+            padding: 10px;
+            width: 180px;
+            height: 50px;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 500;
+            letter-spacing: 0.04rem;
+            cursor: pointer;
+        }
+    }
+
+    .drag__element {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+    }
+}
+.drag {
+    background: lightblue;
+}
